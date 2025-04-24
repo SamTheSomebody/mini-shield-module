@@ -1,3 +1,5 @@
+name: zmk-keyboard-mini
+
 build:
   settings:
     board_root: .
