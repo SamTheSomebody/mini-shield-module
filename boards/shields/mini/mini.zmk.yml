@@ -2,7 +2,7 @@ file_format: "1"
 id: mini 
 name: Mini 
 type: shield
-url: https://github.com/SamTheSomebody/
+url: https://github.com/SamTheSomebody/mini-shield-module
 requires:
   - nice_nano_v2
 features:
