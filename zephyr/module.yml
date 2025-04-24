@@ -1,5 +1,5 @@
-name: zmk-keyboard-mini
-
+name: mini_shield_module
 build:
+  cmake: .
   settings:
     board_root: .
