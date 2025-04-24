@@ -1,0 +1,17 @@
+if SHIELD_MINI_LEFT
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "Mini by Sam"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_MINI_LEFT|| SHIELD_MINI_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
