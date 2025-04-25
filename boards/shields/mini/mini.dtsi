@@ -1,4 +1,4 @@
-#include "mini-layouts.dtsi"
+#include <dt-bindings/zmk/matrix_transform.h>
 
 / {
     kscan0: kscan0 {
@@ -41,16 +41,25 @@
 };
 
 / {
+    physical_layout0: physical_layout_0 { // First physical layout, use different naming for other layouts
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        kscan = <&kscan0>; // Label of the kscan node, optional if all layouts use the same
+        transform = <&default_transform>; // Label of the matrix transform for this layout
+    };
+};
+
+/ {
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &physical_layout0;
         // Other chosen items
     };
 };
-
+/*
 / {
     wired_split {
         compatible = "zmk,wired-split";
         device = <&pro_micro_serial>; //Need to customize this, RX/TX is done on 21
     };
-};
+};*/
