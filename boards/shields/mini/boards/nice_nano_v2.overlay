@@ -1,5 +1,3 @@
-#include "<board>-pinctrl.dtsi"
-
 &uart0 {
     pinctrl-0 = <&uart0_default>;
     pinctrl-names = "default";
