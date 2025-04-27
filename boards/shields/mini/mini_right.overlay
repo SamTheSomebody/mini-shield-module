@@ -4,6 +4,6 @@
     col-offset = <5>;
 };
 
-&wired_split {
+/*&wired_split {
     device = <&uart0_default_left>
-};
+};*/
